@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#vertical-navbar {
+    background-color: rgba(65, 180, 162, 0.752);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+}
+
+#horizontal-navbar {
+    background-color: darkgray;
+    display: flex;
+    
+    padding: 10px;
+    position: fixed;
+    left: 240px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.nav-link {
+    color: blue;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#vertical-navbar .nav-link:hover {
+    background-color: yellow;
+}
+
+#horizontal-navbar .nav-link:hover {
+    background-color: gray;
+}
+
+
+</style>
+
+<body>
+    <div id="vertical-navbar">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">HTML</a>
+        <a href="#" class="nav-link">Java</a>
+        <a href="#" class="nav-link">CSS</a>
+        <a href="#" class="nav-link">Bootstrap</a>
+    </div>
+
+    <div id="horizontal-navbar">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">HTML</a>
+        <a href="#" class="nav-link">Java</a>
+        <a href="#" class="nav-link">CSS</a>
+        <a href="#" class="nav-link">Bootstrap</a>
+    </div>
+</body>
+</html>

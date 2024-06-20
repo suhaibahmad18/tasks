@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.styled-table {
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: rgba(65, 180, 162, 0.752);
+}
+
+.styled-table thead tr {
+    
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table thead tr th{
+    text-align: center;
+    
+}
+
+.data1{
+    width: 300px;
+}
+
+
+#data{
+    border: 1.5px solid black;
+    border-radius: 20px;
+    padding: 3px ;
+}
+
+
+
+</style>
+<body>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th id="data" class="data1">First Name</th>
+                <th id="data" class="data1">Last Name</th>
+                <th id="data">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="data" class="data1">Jill</td>
+                <td id="data" class="data1">Eve</td>
+                <td id="data">John</td>
+            </tr>
+            <tr>
+                <td id="data" class="data1">Smith</td>
+                <td id="data" class="data1">Jackson</td>
+                <td id="data">Joe</td>
+            </tr>
+            <tr>
+                <td id="data" class="data1">50</td>
+                <td id="data" class="data1">94</td>
+                <td id="data">80</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        .login-container img {
+            border-radius: 50%;
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .login-container .checkbox-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .login-container .checkbox-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .login-container .cancel-btn {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 48%;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .login-container .cancel-btn:hover {
+            background-color: #e53935;
+        }
+        .login-container .forgot-password {
+            color: #333;
+            text-decoration: none;
+        }
+        .login-container .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <img src="https://cdn2.iconfinder.com/data/icons/business-and-finance-related-hand-gestures/256/face_female_blank_user_avatar_mannequin-512.png" alt="Avatar">
+    <form>
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password">
+        </div>
+        <div>
+            <input type="submit" value="Login">
+        </div>
+        <div class="checkbox-container">
+            <label>
+                <input type="checkbox" name="remember"> Remember me
+            </label>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+        <div>
+            <button type="button" class="cancel-btn">Cancel</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

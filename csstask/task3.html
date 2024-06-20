@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.styled-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;     
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #c4c5c9db;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+</style>
+<body>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfred Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>germany</td>
+            </tr>
+            <tr>
+                <td>Web Innovations</td>
+                <td>Jane Smith</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Cloud Networks</td>
+                <td>Michael Johnson</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Green Energy</td>
+                <td>Emily Davis</td>
+                <td>Australia</td>
+            </tr>
+            <tr>
+                <td>Auto Dynamics</td>
+                <td>David Wilson</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Health Horizons</td>
+                <td>Linda Martinez</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Fashion Forward</td>
+                <td>James Brown</td>
+                <td>Italy</td>
+            </tr>
+            <tr>
+                <td>EduTech Solutions</td>
+                <td>Patricia Taylor</td>
+                <td>Spain</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
